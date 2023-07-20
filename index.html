@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>BMI Calculator</title>
+    
+</head>
+<body>
+
+    <div class="tool-container-feild-group">
+        <div class="box">
+
+          <h1>Kalkulator BMI</h1>
+          <div class="content">
+          <p class="paragraph">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? <br> Yuk, hitung sekarang di kalkulator BMI.
+          </p>
+          <br>
+            <div class="input">
+                <label for="height">Usia(Thn)</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+
+            <div class="gender">
+              
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Pria</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Wanita</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Tinggi Badan(Cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Berat Badan(Kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="calculate" id="submit" onclick="calculate();">Hitung BMI</button>
+            <br>
+            <button class="reset" id="reset" onclick="reset">Hitung Lagi</button>
+            <br>
+          </div>
+          </div>
+          <div class="result">
+            <p>BMI Kamu</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+
+          <div class="footer"><a class="footer-text" target="_blank" >Copyright 2023 By Kim FannyMz</a></div>
+  
+        </div>
+      </div>
+
+      <a href="https://www.revou.co" target="_blank" class="linkDownload">Kunjungi RevoU </a>
+      
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+<script src="/JavaScript/script.js"></script>
+
+</body>
+</html>
